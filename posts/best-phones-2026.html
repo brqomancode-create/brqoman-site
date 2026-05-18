@@ -3,276 +3,279 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>أفضل 5 هواتف أقل من 500 ريال 2026 — تقنية عُمان</title>
-<meta name="description" content="مقارنة شاملة لأفضل 5 هواتف ذكية أقل من 500 ريال متوفرة في السوق العماني 2026. مراجعة مفصلة لكل هاتف.">
-<link rel="stylesheet" href="../css/style.css">
-<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<title>أفضل 10 هواتف في 2026 — تقنية عُمان</title>
+<meta name="description" content="أفضل الهواتف الذكية في 2026 — مراجعات شاملة مع الأسعار والمواصفات وروابط الشراء من أمازون ونون">
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --primary: #6C5CE7; --secondary: #00B894; --accent: #FDCB6E;
+  --dark: #0A0A1A; --dark2: #141428; --dark3: #1E1E3A;
+  --card: #1A1A35; --text: #E8E8F0; --text-muted: #8888AA; --border: #2A2A50;
+  --gradient1: linear-gradient(135deg, #6C5CE7, #A855F7);
+  --radius: 16px; --radius-sm: 10px;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Tajawal', sans-serif; background: var(--dark); color: var(--text); line-height: 1.8; }
+a { text-decoration: none; color: inherit; }
+.header { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: rgba(10,10,26,0.9); backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); }
+.header-inner { max-width: 1300px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 70px; }
+.logo { display: flex; align-items: center; gap: 10px; font-size: 1.5rem; font-weight: 900; }
+.logo .accent { background: var(--gradient1); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+.nav { display: flex; gap: 8px; }
+.nav a { padding: 8px 18px; border-radius: 50px; font-weight: 500; font-size: 0.95rem; color: var(--text-muted); transition: all 0.3s; }
+.nav a:hover { color: var(--text); background: var(--dark3); }
+.menu-toggle { display: none; background: none; border: none; color: var(--text); font-size: 1.5rem; cursor: pointer; }
+
+.page-hero { padding: 140px 24px 60px; max-width: 900px; margin: 0 auto; text-align: center; }
+.page-hero h1 { font-size: clamp(2rem, 4vw, 3rem); font-weight: 900; margin-bottom: 12px; }
+.page-hero p { color: var(--text-muted); font-size: 1.1rem; }
+
+/* Phone List */
+.phone-list { max-width: 1000px; margin: 0 auto; padding: 0 24px 80px; display: flex; flex-direction: column; gap: 24px; }
+.phone-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); display: flex; overflow: hidden; transition: all 0.4s; }
+.phone-card:hover { border-color: var(--primary); transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,0.3); }
+.phone-rank { min-width: 60px; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; font-weight: 900; background: var(--dark3); color: var(--primary); }
+.phone-img { width: 180px; min-height: 180px; object-fit: cover; }
+.phone-info { flex: 1; padding: 24px; }
+.phone-info .category { font-size: 0.8rem; color: var(--primary); font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; }
+.phone-info h3 { font-size: 1.3rem; font-weight: 800; margin-bottom: 8px; }
+.phone-info .desc { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 12px; }
+.stars { display: flex; gap: 2px; margin-bottom: 12px; }
+.star { color: var(--accent); font-size: 1rem; }
+.star.empty { color: var(--border); }
+.phone-bottom { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+.price { font-size: 1.3rem; font-weight: 900; color: var(--secondary); }
+.price-old { font-size: 0.9rem; color: var(--text-muted); text-decoration: line-through; margin-right: 8px; }
+.btn-amazon { background: #FF9900; color: #232F3E; padding: 10px 24px; border-radius: 50px; font-weight: 800; font-size: 0.9rem; border: none; cursor: pointer; transition: all 0.3s; font-family: 'Tajawal', sans-serif; }
+.btn-amazon:hover { background: #FFB84D; transform: translateY(-2px); }
+.btn-review { background: var(--dark3); color: var(--text); padding: 10px 20px; border-radius: 50px; font-weight: 700; font-size: 0.85rem; border: 1px solid var(--border); cursor: pointer; transition: all 0.3s; font-family: 'Tajawal', sans-serif; }
+.btn-review:hover { border-color: var(--primary); color: var(--primary); }
+
+.footer { background: var(--dark2); border-top: 1px solid var(--border); padding: 40px 24px 20px; text-align: center; }
+.footer p { color: var(--text-muted); font-size: 0.9rem; }
+
+@media (max-width: 768px) {
+  .nav { display: none; }
+  .menu-toggle { display: block; }
+  .nav.active { display: flex; flex-direction: column; position: absolute; top: 70px; left: 0; right: 0; background: var(--dark2); border-bottom: 1px solid var(--border); padding: 16px; }
+  .phone-card { flex-direction: column; }
+  .phone-rank { min-width: auto; padding: 10px; }
+  .phone-img { width: 100%; height: 200px; }
+}
+</style>
 </head>
 <body>
 
-<!-- Header -->
 <header class="header">
-  <div class="container">
-    <div class="header-inner">
-      <a href="../index.html" class="logo">
-        <span class="logo-icon">⚡</span>
-        <span class="logo-text">تقنية <span class="accent">عُمان</span></span>
-      </a>
-      <nav class="nav">
-        <a href="../index.html">الرئيسية</a>
-        <a href="best-phones-2026.html">الهواتف</a>
-        <a href="best-laptops-2026.html">اللابتوبات</a>
-        <a href="best-headphones-2026.html">السماعات</a>
-        <a href="best-accessories-2026.html">الإكسسوارات</a>
-      </nav>
-      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-    </div>
+  <div class="header-inner">
+    <a href="../index.html" class="logo">
+      <span>⚡</span>
+      <span>تقنية <span class="accent">عُمان</span></span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="../index.html">الرئيسية</a>
+      <a href="../index.html#categories">التصنيفات</a>
+      <a href="../index.html#top-picks">أفضل الاختيارات</a>
+    </nav>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
   </div>
 </header>
 
-<!-- Post Content -->
-<article class="post-page">
-  <div class="container">
-    <a href="../index.html" class="back-link">← العودة للرئيسية</a>
-    
-    <header class="post-header">
-      <h1>📱 أفضل 5 هواتف أقل من 500 ريال 2026</h1>
-      <div class="meta">
-        <span>📅 18 مايو 2026</span>
-        <span>📂 هواتف</span>
-        <span>⏱ قراءة 10 دقائق</span>
-      </div>
-    </header>
+<div class="page-hero">
+  <h1>📱 أفضل 10 هواتف في 2026</h1>
+  <p>مراجعات شاملة مع الأسعار والمواصفات — محدثة مايو 2026</p>
+</div>
 
-    <div class="post-content">
-      <p>إذا تدور على هاتف ذكي ممتاز بس ميزانيتك محدودة، أنت في المكان الصحيح. في هذا المقال راح نقارن لك أفضل 5 هواتف أقل من 500 ريال متوفرة في السوق العماني 2026.</p>
+<div class="phone-list">
 
-      <h2>📊 جدول المقارنة السريع</h2>
-      <table class="comparison-table">
-        <thead>
-          <tr>
-            <th>الهاتف</th>
-            <th>السعر</th>
-            <th>الشاشة</th>
-            <th>البطارية</th>
-            <th>الكاميرا</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>Samsung Galaxy A55</strong></td>
-            <td>~450 ريال</td>
-            <td>6.6" AMOLED</td>
-            <td>5000mAh</td>
-            <td>50MP</td>
-          </tr>
-          <tr>
-            <td><strong>iPhone 15</strong></td>
-            <td>~499 ريال</td>
-            <td>6.1" OLED</td>
-            <td>3349mAh</td>
-            <td>48MP</td>
-          </tr>
-          <tr>
-            <td><strong>Xiaomi Redmi Note 14 Pro</strong></td>
-            <td>~350 ريال</td>
-            <td>6.67" AMOLED</td>
-            <td>5110mAh</td>
-            <td>200MP</td>
-          </tr>
-          <tr>
-            <td><strong>Realme GT 6</strong></td>
-            <td>~400 ريال</td>
-            <td>6.78" AMOLED</td>
-            <td>5500mAh</td>
-            <td>50MP</td>
-          </tr>
-          <tr>
-            <td><strong>OnePlus Nord 4</strong></td>
-            <td>~420 ريال</td>
-            <td>6.74" AMOLED</td>
-            <td>5500mAh</td>
-            <td>50MP</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <h2>1. Samsung Galaxy A55 — الأفضل بشكل عام</h2>
-      
-      <div class="product-box">
-        <h4>📱 Samsung Galaxy A55 5G</h4>
-        <div class="price">~450 ريال عماني</div>
-        <div class="pros-cons">
-          <div class="pros">
-            <div class="pros-title">✅ المميزات</div>
-            <ul>
-              <li>شاشة Super AMOLED رائعة</li>
-              <li>مقاوم للماء والغبار IP67</li>
-              <li>تحديثات أندرويد لمدة 6 سنوات</li>
-              <li>كاميرا 50MP ممتازة</li>
-              <li>تصميم زجاجي أنيق</li>
-            </ul>
-          </div>
-          <div class="cons">
-            <div class="cons-title">❌ العيوب</div>
-            <ul>
-              <li>الشحن 25W فقط (بطيء نسبياً)</li>
-              <li>لا يدعم الشحن اللاسلكي</li>
-              <li>ثقيل نسبياً (213g)</li>
-            </ul>
-          </div>
+  <div class="phone-card">
+    <div class="phone-rank">1</div>
+    <img class="phone-img" src="https://images.unsplash.com/photo-1695048133142-1a20484d2569?w=300&h=300&fit=crop" alt="Galaxy S25 Ultra" loading="lazy">
+    <div class="phone-info">
+      <div class="category">الأفضل بشكل عام</div>
+      <h3>Samsung Galaxy S25 Ultra</h3>
+      <div class="stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+      <p class="desc">كاميرا 200MP مذهلة، أداء خرافي، قلم S Pen مدمج. أفضل هاتف أندرويد بدون منازع.</p>
+      <div class="phone-bottom">
+        <div><span class="price">4,299 ر.ع</span><span class="price-old">4,799 ر.ع</span></div>
+        <div style="display:flex;gap:8px;">
+          <a href="s25-ultra-review.html" class="btn-review">مراجعة كاملة</a>
+          <a href="https://www.amazon.ae/s?k=galaxy+s25+ultra&tag=brqoman-21" class="btn-amazon" target="_blank" rel="nofollow">🛒 أمازون</a>
         </div>
-        <a href="https://www.amazon.ae/s?k=samsung+galaxy+a55" class="buy-button" target="_blank">🛒 اشترِ من Amazon.ae</a>
       </div>
-
-      <h2>2. iPhone 15 — الأفضل لنظام iOS</h2>
-      
-      <div class="product-box">
-        <h4>📱 Apple iPhone 15</h4>
-        <div class="price">~499 ريال عماني</div>
-        <div class="pros-cons">
-          <div class="pros">
-            <div class="pros-title">✅ المميزات</div>
-            <ul>
-              <li>شريحة A16 Bionic سريعة جداً</li>
-              <li>كاميرا 48MP احترافية</li>
-              <li>تحديثات iOS لمدة 7+ سنوات</li>
-              <li>Dynamic Island</li>
-              <li>USB-C أخيراً!</li>
-            </ul>
-          </div>
-          <div class="cons">
-            <div class="cons-title">❌ العيوب</div>
-            <ul>
-              <li>بطارية صغيرة (3349mAh)</li>
-              <li>شاشة 60Hz فقط</li>
-              <li>السعر الأعلى في القائمة</li>
-              <li>لا يأتي مع شاحن</li>
-            </ul>
-          </div>
-        </div>
-        <a href="https://www.amazon.ae/s?k=iphone+15" class="buy-button" target="_blank">🛒 اشترِ من Amazon.ae</a>
-      </div>
-
-      <h2>3. Xiaomi Redmi Note 14 Pro — الأفضل للكاميرا</h2>
-      
-      <div class="product-box">
-        <h4>📱 Xiaomi Redmi Note 14 Pro</h4>
-        <div class="price">~350 ريال عماني</div>
-        <div class="pros-cons">
-          <div class="pros">
-            <div class="pros-title">✅ المميزات</div>
-            <ul>
-              <li>كاميرا 200MP مذهلة!</li>
-              <li>شاشة AMOLED 120Hz</li>
-              <li>بطارية 5110mAh ضخمة</li>
-              <li>شحن سريع 67W</li>
-              <li>سعر ممتاز مقابل المواصفات</li>
-            </ul>
-          </div>
-          <div class="cons">
-            <div class="cons-title">❌ العيوب</div>
-            <ul>
-              <li>واجهة MIUI فيها إعلانات</li>
-              <li>تحديثات أبطأ من Samsung</li>
-              <li>جودة التصنيع متوسطة</li>
-            </ul>
-          </div>
-        </div>
-        <a href="https://www.amazon.ae/s?k=xiaomi+redmi+note+14+pro" class="buy-button" target="_blank">🛒 اشترِ من Amazon.ae</a>
-      </div>
-
-      <h2>4. Realme GT 6 — الأفضل للألعاب</h2>
-      
-      <div class="product-box">
-        <h4>📱 Realme GT 6</h4>
-        <div class="price">~400 ريال عماني</div>
-        <div class="pros-cons">
-          <div class="pros">
-            <div class="pros-title">✅ المميزات</div>
-            <ul>
-              <li>Snapdragon 8s Gen 3 قوي جداً</li>
-              <li>شاشة 120Hz مشرقة</li>
-              <li>بطارية 5500mAh + شحن 120W</li>
-              <li>تبريد ممتاز للألعاب</li>
-              <li>سماعات ستيريو</li>
-            </ul>
-          </div>
-          <div class="cons">
-            <div class="cons-title">❌ العيوب</div>
-            <ul>
-              <li>كاميرا متوسطة</li>
-              <li>لا يدعم الشحن اللاسلكي</li>
-              <li>علامة تجارية أقل شهرة</li>
-            </ul>
-          </div>
-        </div>
-        <a href="https://www.amazon.ae/s?k=realme+gt+6" class="buy-button" target="_blank">🛒 اشترِ من Amazon.ae</a>
-      </div>
-
-      <h2>5. OnePlus Nord 4 — الأفضل للشحن السريع</h2>
-      
-      <div class="product-box">
-        <h4>📱 OnePlus Nord 4</h4>
-        <div class="price">~420 ريال عماني</div>
-        <div class="pros-cons">
-          <div class="pros">
-            <div class="pros-title">✅ المميزات</div>
-            <ul>
-              <li>شحن سريع 100W (0-100% في 30 دقيقة!)</li>
-              <li>بطارية 5500mAh</li>
-              <li>شاشة AMOLED 120Hz</li>
-              <li>واجهة OxygenOS نظيفة</li>
-              <li>تصميم أنيق وخفيف</li>
-            </ul>
-          </div>
-          <div class="cons">
-            <div class="cons-title">❌ العيوب</div>
-            <ul>
-              <li>كاميرا 50MP فقط (متوسطة)</li>
-              <li>لا يدعم الشحن اللاسلكي</li>
-              <li>تحديثات أبطأ من Samsung</li>
-            </ul>
-          </div>
-        </div>
-        <a href="https://www.amazon.ae/s?k=oneplus+nord+4" class="buy-button" target="_blank">🛒 اشترِ من Amazon.ae</a>
-      </div>
-
-      <h2>🏆 الخلاصة — أي هاتف تختار؟</h2>
-      
-      <div class="verdict">
-        <h3>توصيتنا:</h3>
-        <ul>
-          <li><strong>أفضل هاتف بشكل عام:</strong> Samsung Galaxy A55 — توازن ممتاز بين كل شيء</li>
-          <li><strong>أفضل كاميرا:</strong> Xiaomi Redmi Note 14 Pro — 200MP بسعر ممتاز</li>
-          <li><strong>أفضل للألعاب:</strong> Realme GT 6 — أداء خارق</li>
-          <li><strong>أفضل لنظام iOS:</strong> iPhone 15 — لو تبي آيفون</li>
-          <li><strong>أفضل شحن سريع:</strong> OnePlus Nord 4 — 100W!</li>
-        </ul>
-      </div>
-
-      <h2>💡 نصائح قبل الشراء</h2>
-      <ul>
-        <li>قارن الأسعار بين Amazon.ae و Noon والمتاجر المحلية</li>
-        <li>تأكد من توافق الشبكة مع شركات الاتصال في عُمان</li>
-        <li>اشترِ من بائع موثوق مع ضمان</li>
-        <li>لا تنسَ تشتري حماية للشاشة وحافظة</li>
-      </ul>
-
-      <p><em>ملاحظة: الأسعار تقريبية وقد تتغير. الروابط تحتوي على روابط عمولة — عند الشراء من خلالها نحصل على عمولة صغيرة بدون تكلفة إضافية عليك.</em></p>
     </div>
   </div>
-</article>
 
-<!-- Footer -->
+  <div class="phone-card">
+    <div class="phone-rank">2</div>
+    <img class="phone-img" src="https://images.unsplash.com/photo-1695048133142-1a20484d2569?w=300&h=300&fit=crop&sat=-100" alt="iPhone 16 Pro Max" loading="lazy">
+    <div class="phone-info">
+      <div class="category">الأفضل لمستخدمي أبل</div>
+      <h3>iPhone 16 Pro Max</h3>
+      <div class="stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+      <p class="desc">أقوى آيفون على الإطلاق مع A18 Pro. كاميرا 48MP، زر التحكم بالكاميرا، وتكامل مع Apple Intelligence.</p>
+      <div class="phone-bottom">
+        <div><span class="price">4,599 ر.ع</span><span class="price-old">4,999 ر.ع</span></div>
+        <div style="display:flex;gap:8px;">
+          <a href="#" class="btn-review">مراجعة كاملة</a>
+          <a href="https://www.amazon.ae/s?k=iphone+16+pro+max&tag=brqoman-21" class="btn-amazon" target="_blank" rel="nofollow">🛒 أمازون</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="phone-card">
+    <div class="phone-rank">3</div>
+    <img class="phone-img" src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=300&h=300&fit=crop" alt="Google Pixel 9 Pro" loading="lazy">
+    <div class="phone-info">
+      <div class="category">الأفضل للذكاء الاصطناعي</div>
+      <h3>Google Pixel 9 Pro</h3>
+      <div class="stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star empty">★</span></div>
+      <p class="desc">أفضل تجربة أندرويد نقية مع أقوى ميزات AI. كاميرا 50MP مع تحرير سحري للصور.</p>
+      <div class="phone-bottom">
+        <div><span class="price">3,199 ر.ع</span><span class="price-old">3,599 ر.ع</span></div>
+        <div style="display:flex;gap:8px;">
+          <a href="#" class="btn-review">مراجعة كاملة</a>
+          <a href="https://www.amazon.ae/s?k=pixel+9+pro&tag=brqoman-21" class="btn-amazon" target="_blank" rel="nofollow">🛒 أمازون</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="phone-card">
+    <div class="phone-rank">4</div>
+    <img class="phone-img" src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?w=300&h=300&fit=crop" alt="OnePlus 13" loading="lazy">
+    <div class="phone-info">
+      <div class="category">أفضل قيمة للسعر</div>
+      <h3>OnePlus 13</h3>
+      <div class="stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star empty">★</span></div>
+      <p class="desc">هاتف بمواصفات فاخرة بسعر أقل. شاشة 120Hz، شحن سريع 100W، وأداء ممتاز.</p>
+      <div class="phone-bottom">
+        <div><span class="price">2,799 ر.ع</span><span class="price-old">3,199 ر.ع</span></div>
+        <div style="display:flex;gap:8px;">
+          <a href="#" class="btn-review">مراجعة كاملة</a>
+          <a href="https://www.amazon.ae/s?k=oneplus+13&tag=brqoman-21" class="btn-amazon" target="_blank" rel="nofollow">🛒 أمازون</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="phone-card">
+    <div class="phone-rank">5</div>
+    <img class="phone-img" src="https://images.unsplash.com/photo-1574944985070-8f3ebc6b79d2?w=300&h=300&fit=crop" alt="Samsung Galaxy A55" loading="lazy">
+    <div class="phone-info">
+      <div class="category">أفضل هاتف اقتصادي</div>
+      <h3>Samsung Galaxy A55</h3>
+      <div class="stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star empty">★</span></div>
+      <p class="desc">هاتف اقتصادي بمواصفات ممتازة. شاشة AMOLED، كاميرا 50MP، وبطارية 5000mAh.</p>
+      <div class="phone-bottom">
+        <div><span class="price">899 ر.ع</span><span class="price-old">1,099 ر.ع</span></div>
+        <div style="display:flex;gap:8px;">
+          <a href="#" class="btn-review">مراجعة كاملة</a>
+          <a href="https://www.amazon.ae/s?k=galaxy+a55&tag=brqoman-21" class="btn-amazon" target="_blank" rel="nofollow">🛒 أمازون</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="phone-card">
+    <div class="phone-rank">6</div>
+    <img class="phone-img" src="https://images.unsplash.com/photo-1585060544812-6b45742d762f?w=300&h=300&fit=crop" alt="Xiaomi 15 Ultra" loading="lazy">
+    <div class="phone-info">
+      <div class="category">أفضل كاميرا بسعر معقول</div>
+      <h3>Xiaomi 15 Ultra</h3>
+      <div class="stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+      <p class="desc">كاميرا احترافية مع عدسات Leica. أداء قوي وسعر أقل من المنافسين.</p>
+      <div class="phone-bottom">
+        <div><span class="price">3,499 ر.ع</span></div>
+        <div style="display:flex;gap:8px;">
+          <a href="#" class="btn-review">مراجعة كاملة</a>
+          <a href="https://www.amazon.ae/s?k=xiaomi+15+ultra&tag=brqoman-21" class="btn-amazon" target="_blank" rel="nofollow">🛒 أمازون</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="phone-card">
+    <div class="phone-rank">7</div>
+    <img class="phone-img" src="https://images.unsplash.com/photo-1605236453806-6ff36851218e?w=300&h=300&fit=crop" alt="Nothing Phone 3" loading="lazy">
+    <div class="phone-info">
+      <div class="category">أفضل تصميم فريد</div>
+      <h3>Nothing Phone 3</h3>
+      <div class="stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star empty">★</span></div>
+      <p class="desc">تصميم شفاف فريد مع واجهة Glyph. أندرويد نقي وأداء ممتاز.</p>
+      <div class="phone-bottom">
+        <div><span class="price">2,299 ر.ع</span></div>
+        <div style="display:flex;gap:8px;">
+          <a href="#" class="btn-review">مراجعة كاملة</a>
+          <a href="https://www.amazon.ae/s?k=nothing+phone+3&tag=brqoman-21" class="btn-amazon" target="_blank" rel="nofollow">🛒 أمازون</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="phone-card">
+    <div class="phone-rank">8</div>
+    <img class="phone-img" src="https://images.unsplash.com/photo-1587831990711-23ca6441447b?w=300&h=300&fit=crop" alt="Motorola Edge 50 Ultra" loading="lazy">
+    <div class="phone-info">
+      <div class="category">أفضل بطارية</div>
+      <h3>Motorola Edge 50 Ultra</h3>
+      <div class="stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star empty">★</span></div>
+      <p class="desc">بطارية 4500mAh مع شحن 125W — تشحن من 0 إلى 100% في 20 دقيقة فقط!</p>
+      <div class="phone-bottom">
+        <div><span class="price">1,799 ر.ع</span></div>
+        <div style="display:flex;gap:8px;">
+          <a href="#" class="btn-review">مراجعة كاملة</a>
+          <a href="https://www.amazon.ae/s?k=motorola+edge+50+ultra&tag=brqoman-21" class="btn-amazon" target="_blank" rel="nofollow">🛒 أمازون</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="phone-card">
+    <div class="phone-rank">9</div>
+    <img class="phone-img" src="https://images.unsplash.com/photo-1565849904461-04a58ad377e0?w=300&h=300&fit=crop" alt="Samsung Galaxy Z Fold 6" loading="lazy">
+    <div class="phone-info">
+      <div class="category">أفضل هاتف قابل للطي</div>
+      <h3>Samsung Galaxy Z Fold 6</h3>
+      <div class="stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star empty">★</span></div>
+      <p class="desc">هاتف يتحول لتابلت. شاشة 7.6 بوصة داخلية، مثالي للإنتاجية والألعاب.</p>
+      <div class="phone-bottom">
+        <div><span class="price">5,499 ر.ع</span></div>
+        <div style="display:flex;gap:8px;">
+          <a href="#" class="btn-review">مراجعة كاملة</a>
+          <a href="https://www.amazon.ae/s?k=galaxy+z+fold+6&tag=brqoman-21" class="btn-amazon" target="_blank" rel="nofollow">🛒 أمازون</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="phone-card">
+    <div class="phone-rank">10</div>
+    <img class="phone-img" src="https://images.unsplash.com/photo-1512054502232-10a0a035d672?w=300&h=300&fit=crop" alt="Realme GT 7 Pro" loading="lazy">
+    <div class="phone-info">
+      <div class="category">أفضل هاتف ألعاب اقتصادي</div>
+      <h3>Realme GT 7 Pro</h3>
+      <div class="stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star empty">★</span></div>
+      <p class="desc">أداء ألعاب ممتاز بسعر معقول. شاشة 144Hz وتبريد بخاري.</p>
+      <div class="phone-bottom">
+        <div><span class="price">1,499 ر.ع</span></div>
+        <div style="display:flex;gap:8px;">
+          <a href="#" class="btn-review">مراجعة كاملة</a>
+          <a href="https://www.amazon.ae/s?k=realme+gt+7+pro&tag=brqoman-21" class="btn-amazon" target="_blank" rel="nofollow">🛒 أمازون</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
 <footer class="footer">
-  <div class="container">
-    <div class="footer-bottom">
-      <p>© 2026 تقنية عُمان — جميع الحقوق محفوظة</p>
-    </div>
-  </div>
+  <p>© 2026 تقنية عُمان — جميع الحقوق محفوظة | هذا الموقع يستخدم روابط تابعة لبرامج الأفلييت</p>
 </footer>
 
-<script src="../js/main.js"></script>
+<script>
+function toggleMenu() { document.getElementById('nav').classList.toggle('active'); }
+</script>
 </body>
 </html>
