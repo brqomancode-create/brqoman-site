@@ -5,277 +5,178 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>أفضل 10 هواتف في 2026 — تقنية عُمان</title>
 <meta name="description" content="أفضل الهواتف الذكية في 2026 — مراجعات شاملة مع الأسعار والمواصفات وروابط الشراء من أمازون ونون">
-<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "أفضل 10 هواتف في 2026",
+  "author": {"@type": "Organization", "name": "تقنية عُمان"},
+  "dateModified": "2026-05-19",
+  "publisher": {"@type": "Organization", "name": "تقنية عُمان"}
+}
+</script>
 <style>
 :root {
-  --primary: #6C5CE7; --secondary: #00B894; --accent: #FDCB6E;
-  --dark: #0A0A1A; --dark2: #141428; --dark3: #1E1E3A;
-  --card: #1A1A35; --text: #E8E8F0; --text-muted: #8888AA; --border: #2A2A50;
-  --gradient1: linear-gradient(135deg, #6C5CE7, #A855F7);
-  --radius: 16px; --radius-sm: 10px;
+  --bg: #0a0a0f; --bg2: #111118; --bg3: #1a1a24; --card: #16161f;
+  --card-hover: #1e1e2a; --border: #2a2a3a; --text: #e4e4ef; --text-dim: #9090a8;
+  --text-muted: #6a6a80; --accent: #7c6cf0; --accent-light: #9b8fff;
+  --accent-glow: rgba(124,108,240,0.15); --green: #34d399; --amber: #fbbf24;
+  --radius: 12px; --radius-lg: 20px; --radius-xl: 28px;
+  --shadow: 0 4px 24px rgba(0,0,0,0.4); --transition: 0.3s cubic-bezier(0.4,0,0.2,1);
 }
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: 'Tajawal', sans-serif; background: var(--dark); color: var(--text); line-height: 1.8; }
-a { text-decoration: none; color: inherit; }
-.header { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: rgba(10,10,26,0.9); backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); }
-.header-inner { max-width: 1300px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 70px; }
-.logo { display: flex; align-items: center; gap: 10px; font-size: 1.5rem; font-weight: 900; }
-.logo .accent { background: var(--gradient1); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
-.nav { display: flex; gap: 8px; }
-.nav a { padding: 8px 18px; border-radius: 50px; font-weight: 500; font-size: 0.95rem; color: var(--text-muted); transition: all 0.3s; }
-.nav a:hover { color: var(--text); background: var(--dark3); }
-.menu-toggle { display: none; background: none; border: none; color: var(--text); font-size: 1.5rem; cursor: pointer; }
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'IBM Plex Sans Arabic',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.7;-webkit-font-smoothing:antialiased}
+a{text-decoration:none;color:inherit;transition:color var(--transition)}
+img{max-width:100%;display:block}
+.container{max-width:1200px;margin:0 auto;padding:0 24px}
 
-.page-hero { padding: 140px 24px 60px; max-width: 900px; margin: 0 auto; text-align: center; }
-.page-hero h1 { font-size: clamp(2rem, 4vw, 3rem); font-weight: 900; margin-bottom: 12px; }
-.page-hero p { color: var(--text-muted); font-size: 1.1rem; }
+.header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,10,15,0.8);backdrop-filter:blur(16px) saturate(1.4);border-bottom:1px solid var(--border);transition:all var(--transition)}
+.header.scrolled{background:rgba(10,10,15,0.95)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{display:flex;align-items:center;gap:10px;font-size:1.3rem;font-weight:700}
+.logo-mark{width:36px;height:36px;background:var(--accent);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;box-shadow:0 2px 12px var(--accent-glow)}
+.logo-accent{color:var(--accent-light)}
+.nav{display:flex;gap:4px}
+.nav a{padding:8px 16px;border-radius:8px;font-size:0.9rem;font-weight:500;color:var(--text-dim);transition:all var(--transition)}
+.nav a:hover{color:var(--text);background:var(--bg3)}
+.menu-btn{display:none;background:none;border:none;color:var(--text);font-size:1.4rem;cursor:pointer}
+
+.page-hero{padding:120px 0 60px;text-align:center}
+.breadcrumb{font-size:0.85rem;color:var(--text-muted);margin-bottom:16px}
+.breadcrumb a{color:var(--accent-light)}
+.page-hero h1{font-size:clamp(1.8rem,4vw,2.8rem);font-weight:700;letter-spacing:-0.02em;margin-bottom:8px}
+.page-hero p{color:var(--text-dim);font-size:1.05rem}
 
 /* Phone List */
-.phone-list { max-width: 1000px; margin: 0 auto; padding: 0 24px 80px; display: flex; flex-direction: column; gap: 24px; }
-.phone-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); display: flex; overflow: hidden; transition: all 0.4s; }
-.phone-card:hover { border-color: var(--primary); transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,0.3); }
-.phone-rank { min-width: 60px; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; font-weight: 900; background: var(--dark3); color: var(--primary); }
-.phone-img { width: 180px; min-height: 180px; object-fit: cover; }
-.phone-info { flex: 1; padding: 24px; }
-.phone-info .category { font-size: 0.8rem; color: var(--primary); font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; }
-.phone-info h3 { font-size: 1.3rem; font-weight: 800; margin-bottom: 8px; }
-.phone-info .desc { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 12px; }
-.stars { display: flex; gap: 2px; margin-bottom: 12px; }
-.star { color: var(--accent); font-size: 1rem; }
-.star.empty { color: var(--border); }
-.phone-bottom { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
-.price { font-size: 1.3rem; font-weight: 900; color: var(--secondary); }
-.price-old { font-size: 0.9rem; color: var(--text-muted); text-decoration: line-through; margin-right: 8px; }
-.btn-amazon { background: #FF9900; color: #232F3E; padding: 10px 24px; border-radius: 50px; font-weight: 800; font-size: 0.9rem; border: none; cursor: pointer; transition: all 0.3s; font-family: 'Tajawal', sans-serif; }
-.btn-amazon:hover { background: #FFB84D; transform: translateY(-2px); }
-.btn-review { background: var(--dark3); color: var(--text); padding: 10px 20px; border-radius: 50px; font-weight: 700; font-size: 0.85rem; border: 1px solid var(--border); cursor: pointer; transition: all 0.3s; font-family: 'Tajawal', sans-serif; }
-.btn-review:hover { border-color: var(--primary); color: var(--primary); }
+.phone-list{max-width:900px;margin:0 auto;padding:0 24px 80px;display:flex;flex-direction:column;gap:16px}
+.phone-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius-lg);display:flex;overflow:hidden;transition:all var(--transition)}
+.phone-card:hover{border-color:var(--accent);transform:translateY(-3px);box-shadow:var(--shadow)}
+.phone-rank{min-width:56px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;font-weight:700;background:var(--bg3);color:var(--accent);flex-shrink:0}
+.phone-img{width:160px;height:160px;object-fit:cover;flex-shrink:0}
+.phone-info{flex:1;padding:20px}
+.phone-info .pcat{font-size:0.75rem;color:var(--accent-light);font-weight:600;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px}
+.phone-info h3{font-size:1.15rem;font-weight:700;margin-bottom:6px}
+.phone-info .pdesc{color:var(--text-dim);font-size:0.88rem;margin-bottom:10px;line-height:1.6}
+.stars{display:flex;gap:2px;align-items:center;margin-bottom:10px}
+.star{color:var(--amber);font-size:0.85rem}
+.star-o{color:var(--border);font-size:0.85rem}
+.rating-val{font-size:0.78rem;color:var(--text-muted);margin-right:6px}
+.phone-bottom{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.price{font-size:1.15rem;font-weight:700;color:var(--green)}
+.price-old{font-size:0.82rem;color:var(--text-muted);text-decoration:line-through;margin-right:6px}
+.btn-amazon{padding:8px 20px;background:#f59e0b;color:#0a0a0f;border-radius:8px;font-weight:700;font-size:0.82rem;border:none;cursor:pointer;transition:all var(--transition);font-family:inherit}
+.btn-amazon:hover{background:#fbbf24;transform:translateY(-1px)}
+.btn-review{padding:8px 16px;background:var(--bg3);color:var(--text-dim);border-radius:8px;font-weight:600;font-size:0.82rem;border:1px solid var(--border);cursor:pointer;transition:all var(--transition);font-family:inherit}
+.btn-review:hover{border-color:var(--accent);color:var(--accent-light)}
 
-.footer { background: var(--dark2); border-top: 1px solid var(--border); padding: 40px 24px 20px; text-align: center; }
-.footer p { color: var(--text-muted); font-size: 0.9rem; }
+/* CTA */
+.cta-section{max-width:900px;margin:0 auto;padding:0 24px 80px}
+.cta-box{background:linear-gradient(135deg,rgba(124,108,240,0.08),rgba(52,211,153,0.05));border:1px solid var(--border);border-radius:var(--radius-xl);padding:40px;text-align:center}
+.cta-box h2{font-size:1.4rem;font-weight:700;margin-bottom:8px}
+.cta-box p{color:var(--text-dim);margin-bottom:20px;font-size:0.95rem}
+.cta-buttons{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.btn-cta{padding:12px 28px;background:var(--accent);color:white;border-radius:var(--radius);font-weight:600;font-size:0.9rem;border:none;cursor:pointer;transition:all var(--transition);font-family:inherit}
+.btn-cta:hover{background:var(--accent-light);transform:translateY(-2px)}
 
-@media (max-width: 768px) {
-  .nav { display: none; }
-  .menu-toggle { display: block; }
-  .nav.active { display: flex; flex-direction: column; position: absolute; top: 70px; left: 0; right: 0; background: var(--dark2); border-bottom: 1px solid var(--border); padding: 16px; }
-  .phone-card { flex-direction: column; }
-  .phone-rank { min-width: auto; padding: 10px; }
-  .phone-img { width: 100%; height: 200px; }
+/* Footer */
+.footer{border-top:1px solid var(--border);padding:40px 0 20px;text-align:center;background:var(--bg2)}
+.footer p{color:var(--text-muted);font-size:0.85rem}
+
+@media(max-width:768px){
+  .nav{display:none}
+  .menu-btn{display:block}
+  .nav.open{display:flex;flex-direction:column;position:absolute;top:64px;left:0;right:0;background:var(--bg2);border-bottom:1px solid var(--border);padding:12px 24px;gap:4px}
+  .phone-card{flex-direction:column}
+  .phone-rank{min-width:auto;padding:8px}
+  .phone-img{width:100%;height:180px}
 }
 </style>
 </head>
 <body>
 
-<header class="header">
-  <div class="header-inner">
-    <a href="../index.html" class="logo">
-      <span>⚡</span>
-      <span>تقنية <span class="accent">عُمان</span></span>
-    </a>
-    <nav class="nav" id="nav">
-      <a href="../index.html">الرئيسية</a>
-      <a href="../index.html#categories">التصنيفات</a>
-      <a href="../index.html#top-picks">أفضل الاختيارات</a>
-    </nav>
-    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+<header class="header" id="header">
+  <div class="container">
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-mark">⚡</div>
+        <span>تقنية <span class="logo-accent">عُمان</span></span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="../index.html">الرئيسية</a>
+        <a href="../index.html#categories">التصنيفات</a>
+        <a href="../index.html#featured">أفضل الاختيارات</a>
+      </nav>
+      <button class="menu-btn" onclick="toggleNav()">☰</button>
+    </div>
   </div>
 </header>
 
 <div class="page-hero">
-  <h1>📱 أفضل 10 هواتف في 2026</h1>
-  <p>مراجعات شاملة مع الأسعار والمواصفات — محدثة مايو 2026</p>
+  <div class="container">
+    <div class="breadcrumb"><a href="../index.html">الرئيسية</a> / الهواتف</div>
+    <h1>📱 أفضل 10 هواتف في 2026</h1>
+    <p>مراجعات شاملة مع الأسعار والمواصفات — محدثة مايو 2026</p>
+  </div>
 </div>
 
-<div class="phone-list">
+<div class="phone-list" id="phone-list"></div>
 
-  <div class="phone-card">
-    <div class="phone-rank">1</div>
-    <img class="phone-img" src="https://images.unsplash.com/photo-1695048133142-1a20484d2569?w=300&h=300&fit=crop" alt="Galaxy S25 Ultra" loading="lazy">
-    <div class="phone-info">
-      <div class="category">الأفضل بشكل عام</div>
-      <h3>Samsung Galaxy S25 Ultra</h3>
-      <div class="stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
-      <p class="desc">كاميرا 200MP مذهلة، أداء خرافي، قلم S Pen مدمج. أفضل هاتف أندرويد بدون منازع.</p>
-      <div class="phone-bottom">
-        <div><span class="price">4,299 ر.ع</span><span class="price-old">4,799 ر.ع</span></div>
-        <div style="display:flex;gap:8px;">
-          <a href="s25-ultra-review.html" class="btn-review">مراجعة كاملة</a>
-          <a href="https://www.amazon.ae/s?k=galaxy+s25+ultra&tag=brqoman-21" class="btn-amazon" target="_blank" rel="nofollow">🛒 أمازون</a>
-        </div>
-      </div>
+<div class="cta-section">
+  <div class="cta-box">
+    <h2>🔍 ما لقيت اللي تبيه؟</h2>
+    <p>أرسل لنا طلبك وراح نراجع لك المنتج اللي تبيه</p>
+    <div class="cta-buttons">
+      <a href="../index.html#nl" class="btn-cta">📬 اشترك في النشرة</a>
+      <a href="../index.html#compare" class="btn-cta" style="background:var(--bg3);color:var(--text);border:1px solid var(--border)">📊 شوف المقارنات</a>
     </div>
   </div>
-
-  <div class="phone-card">
-    <div class="phone-rank">2</div>
-    <img class="phone-img" src="https://images.unsplash.com/photo-1695048133142-1a20484d2569?w=300&h=300&fit=crop&sat=-100" alt="iPhone 16 Pro Max" loading="lazy">
-    <div class="phone-info">
-      <div class="category">الأفضل لمستخدمي أبل</div>
-      <h3>iPhone 16 Pro Max</h3>
-      <div class="stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
-      <p class="desc">أقوى آيفون على الإطلاق مع A18 Pro. كاميرا 48MP، زر التحكم بالكاميرا، وتكامل مع Apple Intelligence.</p>
-      <div class="phone-bottom">
-        <div><span class="price">4,599 ر.ع</span><span class="price-old">4,999 ر.ع</span></div>
-        <div style="display:flex;gap:8px;">
-          <a href="#" class="btn-review">مراجعة كاملة</a>
-          <a href="https://www.amazon.ae/s?k=iphone+16+pro+max&tag=brqoman-21" class="btn-amazon" target="_blank" rel="nofollow">🛒 أمازون</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="phone-card">
-    <div class="phone-rank">3</div>
-    <img class="phone-img" src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=300&h=300&fit=crop" alt="Google Pixel 9 Pro" loading="lazy">
-    <div class="phone-info">
-      <div class="category">الأفضل للذكاء الاصطناعي</div>
-      <h3>Google Pixel 9 Pro</h3>
-      <div class="stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star empty">★</span></div>
-      <p class="desc">أفضل تجربة أندرويد نقية مع أقوى ميزات AI. كاميرا 50MP مع تحرير سحري للصور.</p>
-      <div class="phone-bottom">
-        <div><span class="price">3,199 ر.ع</span><span class="price-old">3,599 ر.ع</span></div>
-        <div style="display:flex;gap:8px;">
-          <a href="#" class="btn-review">مراجعة كاملة</a>
-          <a href="https://www.amazon.ae/s?k=pixel+9+pro&tag=brqoman-21" class="btn-amazon" target="_blank" rel="nofollow">🛒 أمازون</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="phone-card">
-    <div class="phone-rank">4</div>
-    <img class="phone-img" src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?w=300&h=300&fit=crop" alt="OnePlus 13" loading="lazy">
-    <div class="phone-info">
-      <div class="category">أفضل قيمة للسعر</div>
-      <h3>OnePlus 13</h3>
-      <div class="stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star empty">★</span></div>
-      <p class="desc">هاتف بمواصفات فاخرة بسعر أقل. شاشة 120Hz، شحن سريع 100W، وأداء ممتاز.</p>
-      <div class="phone-bottom">
-        <div><span class="price">2,799 ر.ع</span><span class="price-old">3,199 ر.ع</span></div>
-        <div style="display:flex;gap:8px;">
-          <a href="#" class="btn-review">مراجعة كاملة</a>
-          <a href="https://www.amazon.ae/s?k=oneplus+13&tag=brqoman-21" class="btn-amazon" target="_blank" rel="nofollow">🛒 أمازون</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="phone-card">
-    <div class="phone-rank">5</div>
-    <img class="phone-img" src="https://images.unsplash.com/photo-1574944985070-8f3ebc6b79d2?w=300&h=300&fit=crop" alt="Samsung Galaxy A55" loading="lazy">
-    <div class="phone-info">
-      <div class="category">أفضل هاتف اقتصادي</div>
-      <h3>Samsung Galaxy A55</h3>
-      <div class="stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star empty">★</span></div>
-      <p class="desc">هاتف اقتصادي بمواصفات ممتازة. شاشة AMOLED، كاميرا 50MP، وبطارية 5000mAh.</p>
-      <div class="phone-bottom">
-        <div><span class="price">899 ر.ع</span><span class="price-old">1,099 ر.ع</span></div>
-        <div style="display:flex;gap:8px;">
-          <a href="#" class="btn-review">مراجعة كاملة</a>
-          <a href="https://www.amazon.ae/s?k=galaxy+a55&tag=brqoman-21" class="btn-amazon" target="_blank" rel="nofollow">🛒 أمازون</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="phone-card">
-    <div class="phone-rank">6</div>
-    <img class="phone-img" src="https://images.unsplash.com/photo-1585060544812-6b45742d762f?w=300&h=300&fit=crop" alt="Xiaomi 15 Ultra" loading="lazy">
-    <div class="phone-info">
-      <div class="category">أفضل كاميرا بسعر معقول</div>
-      <h3>Xiaomi 15 Ultra</h3>
-      <div class="stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
-      <p class="desc">كاميرا احترافية مع عدسات Leica. أداء قوي وسعر أقل من المنافسين.</p>
-      <div class="phone-bottom">
-        <div><span class="price">3,499 ر.ع</span></div>
-        <div style="display:flex;gap:8px;">
-          <a href="#" class="btn-review">مراجعة كاملة</a>
-          <a href="https://www.amazon.ae/s?k=xiaomi+15+ultra&tag=brqoman-21" class="btn-amazon" target="_blank" rel="nofollow">🛒 أمازون</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="phone-card">
-    <div class="phone-rank">7</div>
-    <img class="phone-img" src="https://images.unsplash.com/photo-1605236453806-6ff36851218e?w=300&h=300&fit=crop" alt="Nothing Phone 3" loading="lazy">
-    <div class="phone-info">
-      <div class="category">أفضل تصميم فريد</div>
-      <h3>Nothing Phone 3</h3>
-      <div class="stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star empty">★</span></div>
-      <p class="desc">تصميم شفاف فريد مع واجهة Glyph. أندرويد نقي وأداء ممتاز.</p>
-      <div class="phone-bottom">
-        <div><span class="price">2,299 ر.ع</span></div>
-        <div style="display:flex;gap:8px;">
-          <a href="#" class="btn-review">مراجعة كاملة</a>
-          <a href="https://www.amazon.ae/s?k=nothing+phone+3&tag=brqoman-21" class="btn-amazon" target="_blank" rel="nofollow">🛒 أمازون</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="phone-card">
-    <div class="phone-rank">8</div>
-    <img class="phone-img" src="https://images.unsplash.com/photo-1587831990711-23ca6441447b?w=300&h=300&fit=crop" alt="Motorola Edge 50 Ultra" loading="lazy">
-    <div class="phone-info">
-      <div class="category">أفضل بطارية</div>
-      <h3>Motorola Edge 50 Ultra</h3>
-      <div class="stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star empty">★</span></div>
-      <p class="desc">بطارية 4500mAh مع شحن 125W — تشحن من 0 إلى 100% في 20 دقيقة فقط!</p>
-      <div class="phone-bottom">
-        <div><span class="price">1,799 ر.ع</span></div>
-        <div style="display:flex;gap:8px;">
-          <a href="#" class="btn-review">مراجعة كاملة</a>
-          <a href="https://www.amazon.ae/s?k=motorola+edge+50+ultra&tag=brqoman-21" class="btn-amazon" target="_blank" rel="nofollow">🛒 أمازون</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="phone-card">
-    <div class="phone-rank">9</div>
-    <img class="phone-img" src="https://images.unsplash.com/photo-1565849904461-04a58ad377e0?w=300&h=300&fit=crop" alt="Samsung Galaxy Z Fold 6" loading="lazy">
-    <div class="phone-info">
-      <div class="category">أفضل هاتف قابل للطي</div>
-      <h3>Samsung Galaxy Z Fold 6</h3>
-      <div class="stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star empty">★</span></div>
-      <p class="desc">هاتف يتحول لتابلت. شاشة 7.6 بوصة داخلية، مثالي للإنتاجية والألعاب.</p>
-      <div class="phone-bottom">
-        <div><span class="price">5,499 ر.ع</span></div>
-        <div style="display:flex;gap:8px;">
-          <a href="#" class="btn-review">مراجعة كاملة</a>
-          <a href="https://www.amazon.ae/s?k=galaxy+z+fold+6&tag=brqoman-21" class="btn-amazon" target="_blank" rel="nofollow">🛒 أمازون</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="phone-card">
-    <div class="phone-rank">10</div>
-    <img class="phone-img" src="https://images.unsplash.com/photo-1512054502232-10a0a035d672?w=300&h=300&fit=crop" alt="Realme GT 7 Pro" loading="lazy">
-    <div class="phone-info">
-      <div class="category">أفضل هاتف ألعاب اقتصادي</div>
-      <h3>Realme GT 7 Pro</h3>
-      <div class="stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star empty">★</span></div>
-      <p class="desc">أداء ألعاب ممتاز بسعر معقول. شاشة 144Hz وتبريد بخاري.</p>
-      <div class="phone-bottom">
-        <div><span class="price">1,499 ر.ع</span></div>
-        <div style="display:flex;gap:8px;">
-          <a href="#" class="btn-review">مراجعة كاملة</a>
-          <a href="https://www.amazon.ae/s?k=realme+gt+7+pro&tag=brqoman-21" class="btn-amazon" target="_blank" rel="nofollow">🛒 أمازون</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
 </div>
 
 <footer class="footer">
-  <p>© 2026 تقنية عُمان — جميع الحقوق محفوظة | هذا الموقع يستخدم روابط تابعة لبرامج الأفلييت</p>
+  <div class="container">
+    <p>© 2026 تقنية عُمان — جميع الحقوق محفوظة | هذا الموقع يستخدم روابط تابعة لبرامج الأفلييت</p>
+  </div>
 </footer>
 
 <script>
-function toggleMenu() { document.getElementById('nav').classList.toggle('active'); }
+window.addEventListener('scroll',()=>{document.getElementById('header').classList.toggle('scrolled',window.scrollY>40)});
+function toggleNav(){document.getElementById('nav').classList.toggle('open')}
+
+const stars=n=>'★'.repeat(Math.floor(n))+'<span class="star-o">'+'★'.repeat(5-Math.floor(n))+'</span>';
+
+const phones=[
+  {name:'Samsung Galaxy S25 Ultra',cat:'الأفضل بشكل عام',rating:9.5,price:'4,299',old:'4,799',desc:'كاميرا 200MP مذهلة، أداء خرافي، قلم S Pen مدمج. أفضل هاتف أندرويد بدون منازع.',img:'https://images.unsplash.com/photo-1695048133142-1a204842569?w=300&h=300&fit=crop&q=70',url:'https://www.amazon.ae/s?k=galaxy+s25+ultra&tag=brqoman-21'},
+  {name:'iPhone 16 Pro Max',cat:'الأفضل لأبل',rating:9.3,price:'4,599',old:'4,999',desc:'أقوى آيفون مع A18 Pro. كاميرا 48MP، زر التحكم بالكاميرا، وApple Intelligence.',img:'https://images.unsplash.com/photo-1695048133142-1a20484d2569?w=300&h=300&fit=crop&q=70&sat=-100',url:'https://www.amazon.ae/s?k=iphone+16+pro+max&tag=brqoman-21'},
+  {name:'Google Pixel 9 Pro',cat:'الأفضل للذكاء الاصطناعي',rating:8.9,price:'3,199',old:'3,599',desc:'أندرويد نقي مع أقوى ميزات AI. كاميرا 50MP مع تحرير سحري للصور.',img:'https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=300&h=300&fit=crop&q=70',url:'https://www.amazon.ae/s?k=pixel+9+pro&tag=brqoman-21'},
+  {name:'OnePlus 13',cat:'أفضل قيمة للسعر',rating:8.7,price:'2,799',old:'3,199',desc:'مواصفات فاخرة بسعر أقل. شاشة 120Hz، شحن سريع 100W.',img:'https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?w=300&h=300&fit=crop&q=70',url:'https://www.amazon.ae/s?k=oneplus+13&tag=brqoman-21'},
+  {name:'Samsung Galaxy A55',cat:'أفضل هاتف اقتصادي',rating:8.2,price:'899',old:'1,099',desc:'هاتف اقتصادي بمواصفات ممتازة. شاشة AMOLED وكاميرا 50MP.',img:'https://images.unsplash.com/photo-1574944985070-8f3ebc6b79d2?w=300&h=300&fit=crop&q=70',url:'https://www.amazon.ae/s?k=galaxy+a55&tag=brqoman-21'},
+  {name:'Xiaomi 15 Ultra',cat:'أفضل كاميرا بسعر معقول',rating:9.0,price:'3,499',old:null,desc:'كاميرا احترافية مع عدسات Leica. أداء قوي وسعر تنافسي.',img:'https://images.unsplash.com/photo-1585060544812-6b45742d762f?w=300&h=300&fit=crop&q=70',url:'https://www.amazon.ae/s?k=xiaomi+15+ultra&tag=brqoman-21'},
+  {name:'Nothing Phone 3',cat:'أفضل تصميم فريد',rating:8.4,price:'2,299',old:null,desc:'تصميم شفاف فريد مع واجهة Glyph. أندرويد نقي وأداء ممتاز.',img:'https://images.unsplash.com/photo-1605236453806-6ff36851218e?w=300&h=300&fit=crop&q=70',url:'https://www.amazon.ae/s?k=nothing+phone+3&tag=brqoman-21'},
+  {name:'Motorola Edge 50 Ultra',cat:'أفضل بطارية',rating:8.3,price:'1,799',old:null,desc:'بطارية 4500mAh مع شحن 125W — تشحن من 0 إلى 100% في 20 دقيقة!',img:'https://images.unsplash.com/photo-1587831990711-23ca6441447b?w=300&h=300&fit=crop&q=70',url:'https://www.amazon.ae/s?k=motorola+edge+50+ultra&tag=brqoman-21'},
+  {name:'Samsung Galaxy Z Fold 6',cat:'أفضل هاتف قابل للطي',rating:8.8,price:'5,499',old:null,desc:'هاتف يتحول لتابلت. شاشة 7.6 بوصة داخلية، مثالي للإنتاجية.',img:'https://images.unsplash.com/photo-1565849904461-04a58ad377e0?w=300&h=300&fit=crop&q=70',url:'https://www.amazon.ae/s?k=galaxy+z+fold+6&tag=brqoman-21'},
+  {name:'Realme GT 7 Pro',cat:'أفضل هاتف ألعاب اقتصادي',rating:8.1,price:'1,499',old:null,desc:'أداء ألعاب ممتاز بسعر معقول. شاشة 144Hz وتبريد بخاري.',img:'https://images.unsplash.com/photo-1512054502232-10a0a035d672?w=300&h=300&fit=crop&q=70',url:'https://www.amazon.ae/s?k=realme+gt+7+pro&tag=brqoman-21'},
+];
+
+const list=document.getElementById('phone-list');
+phones.forEach((p,i)=>{
+  list.innerHTML+=`
+  <div class="phone-card">
+    <div class="phone-rank">${i+1}</div>
+    <img class="phone-img" src="${p.img}" alt="${p.name}" loading="lazy">
+    <div class="phone-info">
+      <div class="pcat">${p.cat}</div>
+      <h3>${p.name}</h3>
+      <div class="stars">${stars(p.rating)}<span class="rating-val">${p.rating}/10</span></div>
+      <p class="pdesc">${p.desc}</p>
+      <div class="phone-bottom">
+        <div><span class="price">${p.price} ر.ع</span>${p.old?`<span class="price-old">${p.old}</span>`:''}</div>
+        <a href="${p.url}" class="btn-amazon" target="_blank" rel="nofollow">🛒 أمازون</a>
+      </div>
+    </div>
+  </div>`;
+});
 </script>
 </body>
 </html>
